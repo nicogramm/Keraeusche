@@ -1,0 +1,33 @@
+{
+    "kohle": {
+        "sounds": [
+            "nicolas:kohle/kohle1"
+        ]
+    },
+	"haha": {
+		"sounds": [
+			"nicolas:haha/haha1"
+		]
+	},
+	"blockklau": {
+		"sounds": [
+			"nicolas:blockklau/blockklau1",
+			"nicolas:blockklau/blockklau2",
+			"nicolas:blockklau/blockklau3",
+			"nicolas:blockklau/blockklau4",
+			"nicolas:blockklau/blockklau5",
+			"nicolas:blockklau/blockklau6",
+			"nicolas:blockklau/blockklau7"
+		]
+	},
+	"wtf": {
+		"sounds": [
+			"nicolas:wtf/wtf1"
+		]
+	},
+	"boom": {
+		"sounds": [
+			"nicolas:boom/boom1"
+		]
+	}
+}
