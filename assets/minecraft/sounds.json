@@ -1,118 +1,118 @@
 {
-  "entity.villager.ambient": {
-    "replace": true,
-    "sounds": [
-      "mob/villager/idle1",
-      "mob/villager/idle2",
-      "mob/villager/idle3",
-      "mob/villager/idle4",
-      "mob/villager/idle5",
-      "mob/villager/idle6",
-      "mob/villager/idle7"
-    ]
-  },
-  "entity.villager.hurt": {
-    "replace": true,
-    "sounds": [
-      "mob/villager/hit1",
-      "mob/villager/hit2",
-      "mob/villager/hit3",
-      "mob/villager/hit4"
-    ]
-  },
-  "entity.witch.hurt": {
-    "replace": true,
-    "sounds": [
-      "entity/witch/hurt1",
-      "entity/witch/hurt2",
-      "entity/witch/hurt3"
-    ]
-  },
-  "entity.witch.throw": {
-    "replace": true,
-    "sounds": [
-      "entity/witch/throw1",
-      "entity/witch/throw2",
-      "entity/witch/throw3"
-    ]
-  },
-  "entity.zombie.ambient": {
-    "replace": true,
-    "sounds": [
-      "mob/zombie/say1",
-      "mob/zombie/say2"
-    ]
-  },
-  "entity.zombie.hurt": {
-    "replace": true,
-    "sounds": [
-      "mob/zombie/hurt1",
-      "mob/zombie/hurt2",
-      "mob/zombie/hurt3"
-    ]
-  },
-  "entity.zombie.attack_wooden_door": {
-    "replace": false,
-    "sounds": [
-      "mob/zombie/door1",
-      "mob/zombie/door2"
-    ]
-  },
-  "entity.zombie.attack_iron_door": {
-    "replace": false,
-    "sounds": [
-      "mob/zombie/door1",
-      "mob/zombie/door2"
-    ]
-  },
-  "entity.drowned.hurt": {
-    "replace": false,
-    "volume": 0.9,
-    "sounds": [
-      "mob/drowned/hurt4"
-    ]
-  },
-  "entity.spider.ambient": {
-    "replace": false,
-    "sounds": [
-      "mob/spider/say5"
-    ]
-  },
-  "entity.bat.ambient": {
-    "replace": false,
-    "sounds": [
-      "mob/bat/idle5"
-    ]
-  },
-  "entity.player.big_fall": {
-    "replace": true,
-    "sounds": [
-      "damage/fallbig"
-    ]
-  },
-  "music.nether": {
-    "replace": false,
-    "sounds": [
-      {
-        "name": "music/game/nether/nether5",
-        "stream": true
-      },
-      {
-        "name": "music/game/nether/nether6",
-        "stream": true
-      }
-    ]
-  },
-  "music_disc.cat": {
-    "sounds": [
-      {
-        "name": "records/cat1",
-        "stream": true
-      },
-      {
-        "name": "records/cat2",
-        "stream": true
-      }
-    ]
-  }
+    "entity.villager.ambient": {
+      "replace": true,
+      "sounds": [
+        "mob/villager/idle1",
+        "mob/villager/idle2",
+        "mob/villager/idle3",
+        "mob/villager/idle4",
+        "mob/villager/idle5",
+        "mob/villager/idle6",
+        "mob/villager/idle7"
+      ]
+    },
+    "entity.villager.hurt": {
+      "replace": true,
+      "sounds": [
+        "mob/villager/hit1",
+        "mob/villager/hit2",
+        "mob/villager/hit3",
+        "mob/villager/hit4"
+      ]
+    },
+    "entity.witch.hurt": {
+      "replace": true,
+      "sounds": [
+        "entity/witch/hurt1",
+        "entity/witch/hurt2",
+        "entity/witch/hurt3"
+      ]
+    },
+    "entity.witch.throw": {
+      "replace": true,
+      "sounds": [
+        "entity/witch/throw1",
+        "entity/witch/throw2",
+        "entity/witch/throw3"
+      ]
+    },
+    "entity.zombie.ambient": {
+      "replace": true,
+      "sounds": [
+        "mob/zombie/say1",
+        "mob/zombie/say2"
+      ]
+    },
+    "entity.zombie.hurt": {
+      "replace": true,
+      "sounds": [
+        "mob/zombie/hurt1",
+        "mob/zombie/hurt2",
+        "mob/zombie/hurt3"
+      ]
+    },
+    "entity.zombie.attack_wooden_door": {
+      "replace": false,
+      "sounds": [
+        "mob/zombie/door1",
+        "mob/zombie/door2"
+      ]
+    },
+    "entity.zombie.attack_iron_door": {
+      "replace": false,
+      "sounds": [
+        "mob/zombie/door1",
+        "mob/zombie/door2"
+      ]
+    },
+    "entity.drowned.hurt": {
+      "replace": false,
+      "volume": 0.9,
+      "sounds": [
+        "mob/drowned/hurt4"
+      ]
+    },
+    "entity.spider.ambient": {
+      "replace": false,
+      "sounds": [
+        "mob/spider/say5"
+      ]
+    },
+    "entity.bat.ambient": {
+        "replace": false,
+        "sounds": [
+            "mob/bat/idle5"
+        ]
+    },
+    "entity.player.big_fall": {
+        "replace": true,
+        "sounds": [
+            "damage/fallbig"
+        ]
+    },
+    "music.nether": {
+        "replace": false,
+        "sounds": [
+            {
+                "name": "music/game/nether/nether5",
+                "stream": true
+            },
+            {
+                "name": "music/game/nether/nether6",
+                "stream": true
+            }
+        ]
+    },
+    "music_disc.cat": {
+        "sounds": [
+            {
+                "name": "records/cat1",
+                "stream": true
+            },
+            {
+                "name": "records/cat2",
+                "stream": true
+            }
+        ]
+    }
 }
