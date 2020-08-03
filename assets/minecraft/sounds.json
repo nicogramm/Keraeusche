@@ -1,82 +1,82 @@
 {
     "entity.villager.ambient": {
-      "replace": true,
-      "sounds": [
-        "mob/villager/idle1",
-        "mob/villager/idle2",
-        "mob/villager/idle3",
-        "mob/villager/idle4",
-        "mob/villager/idle5",
-        "mob/villager/idle6",
-        "mob/villager/idle7"
-      ]
+        "replace": true,
+        "sounds": [
+            "mob/villager/idle1",
+            "mob/villager/idle2",
+            "mob/villager/idle3",
+            "mob/villager/idle4",
+            "mob/villager/idle5",
+            "mob/villager/idle6",
+            "mob/villager/idle7"
+        ]
     },
     "entity.villager.hurt": {
-      "replace": true,
-      "sounds": [
-        "mob/villager/hit1",
-        "mob/villager/hit2",
-        "mob/villager/hit3",
-        "mob/villager/hit4"
-      ]
+        "replace": true,
+        "sounds": [
+            "mob/villager/hit1",
+            "mob/villager/hit2",
+            "mob/villager/hit3",
+            "mob/villager/hit4"
+        ]
     },
     "entity.witch.hurt": {
-      "replace": true,
-      "sounds": [
-        "entity/witch/hurt1",
-        "entity/witch/hurt2",
-        "entity/witch/hurt3"
-      ]
+        "replace": true,
+        "sounds": [
+            "entity/witch/hurt1",
+            "entity/witch/hurt2",
+            "entity/witch/hurt3"
+        ]
     },
     "entity.witch.throw": {
-      "replace": true,
-      "sounds": [
-        "entity/witch/throw1",
-        "entity/witch/throw2",
-        "entity/witch/throw3"
-      ]
+        "replace": true,
+        "sounds": [
+            "entity/witch/throw1",
+            "entity/witch/throw2",
+            "entity/witch/throw3"
+        ]
     },
     "entity.zombie.ambient": {
-      "replace": true,
-      "sounds": [
-        "mob/zombie/say1",
-        "mob/zombie/say2"
-      ]
+        "replace": true,
+        "sounds": [
+            "mob/zombie/say1",
+            "mob/zombie/say2"
+        ]
     },
     "entity.zombie.hurt": {
-      "replace": true,
-      "sounds": [
-        "mob/zombie/hurt1",
-        "mob/zombie/hurt2",
-        "mob/zombie/hurt3"
-      ]
+        "replace": true,
+        "sounds": [
+            "mob/zombie/hurt1",
+            "mob/zombie/hurt2",
+            "mob/zombie/hurt3"
+        ]
     },
     "entity.zombie.attack_wooden_door": {
-      "replace": false,
-      "sounds": [
-        "mob/zombie/door1",
-        "mob/zombie/door2"
-      ]
+        "replace": false,
+        "sounds": [
+            "mob/zombie/door1",
+            "mob/zombie/door2"
+        ]
     },
     "entity.zombie.attack_iron_door": {
-      "replace": false,
-      "sounds": [
-        "mob/zombie/door1",
-        "mob/zombie/door2"
-      ]
+        "replace": false,
+        "sounds": [
+            "mob/zombie/door1",
+            "mob/zombie/door2"
+        ]
     },
     "entity.drowned.hurt": {
-      "replace": false,
-      "volume": 0.9,
-      "sounds": [
-        "mob/drowned/hurt4"
-      ]
+        "replace": false,
+        "volume": 0.9,
+        "sounds": [
+            "mob/drowned/hurt4"
+        ]
     },
     "entity.spider.ambient": {
-      "replace": false,
-      "sounds": [
-        "mob/spider/say5"
-      ]
+        "replace": false,
+        "sounds": [
+            "mob/spider/say5"
+        ]
     },
     "entity.bat.ambient": {
         "replace": false,
