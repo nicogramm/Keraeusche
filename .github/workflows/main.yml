@@ -1,4 +1,4 @@
-name: Build Resourcepack
+name: Build and Upload Resourcepack
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -21,10 +21,15 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v2
     - name: Zip Release
-      uses: TheDoctor0/zip-release@0.4.1
-      with:
-        filename: 'supercoolesounds.zip'
-        exclusions: '*.md *.git*'
+      run: |
+        printf "📦 Creating zip archive...\n"
+        zip -r "SuperCooleSounds.zip" . -x "*.md *.git*" || { printf "\n⛔ Unable to create zip archive.\n"; exit 1;  }
+        printf "✔ Successfully created zip archive.\n"
+    - name: Calculate checksum
+      run: |
+        printf "🧮 Calculating sha-1 hash...\n"
+        sha1sum SuperCooleSounds.zip > SuperCooleSounds.zip.sha1 || { printf "\n⛔ Unable to calculate sha-1 hash.\n"; exit 1;  }
+        printf "✔ Successfully calculated sha-1 hash.\n"
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1.1.2
@@ -37,14 +42,24 @@ jobs:
         release_name: Release ${{ github.ref }}
         draft: false
         prerelease: false
-    - name: Upload Release Asset
-      id: upload-release-asset 
+    - name: Upload resourcepack zip
+      id: upload-resourcepack-zip 
       uses: actions/upload-release-asset@v1.0.2
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
-        asset_path: ./supercoolesounds.zip
+        asset_path: ./SuperCooleSounds.zip
         asset_name: SuperCooleSounds.zip
         asset_content_type: application/zip
+    - name: Upload sha-1 hash
+      id: upload-sha1-hash
+      uses: actions/upload-release-asset@v1.0.2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+        asset_path: ./SuperCooleSounds.zip.sha1
+        asset_name: SuperCooleSounds.zip.sha1
+        asset_content_type: text/plain
 
