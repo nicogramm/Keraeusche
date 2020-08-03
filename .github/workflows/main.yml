@@ -23,7 +23,7 @@ jobs:
     - name: Zip Release
       run: |
         printf "📦 Creating zip archive...\n"
-        zip -r "SuperCooleSounds.zip" . -x "*.md *.git*" || { printf "\n⛔ Unable to create zip archive.\n"; exit 1;  }
+        zip -r SuperCooleSounds.zip . -x *.md *.git* || { printf "\n⛔ Unable to create zip archive.\n"; exit 1;  }
         printf "✔ Successfully created zip archive.\n"
     - name: Calculate checksum
       run: |
