@@ -1,4 +1,12 @@
 {
+    "entity.sheep.ambient": {
+        "replace": false,
+        "sounds": [
+          "mob/sheep/say4",
+          "mob/sheep/say5"
+        ],
+        "subtitle": "subtitles.entity.sheep.ambient"
+    },
     "entity.villager.ambient": {
         "replace": true,
         "sounds": [
