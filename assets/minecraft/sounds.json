@@ -40,7 +40,8 @@
         "replace": true,
         "sounds": [
             "mob/zombie/say1",
-            "mob/zombie/say2"
+            "mob/zombie/say2",
+            "mob/zombie/say3"
         ]
     },
     "entity.zombie.hurt": {
@@ -103,14 +104,15 @@
             }
         ]
     },
-    "music_disc.cat": {
+    "music_disc.11": {
+        "replace": true,
         "sounds": [
             {
-                "name": "records/cat1",
+                "name": "records/11a",
                 "stream": true
             },
             {
-                "name": "records/cat2",
+                "name": "records/11b",
                 "stream": true
             }
         ]
