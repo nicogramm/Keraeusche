@@ -20,15 +20,18 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - name: Checkout Code
       uses: actions/checkout@v2
+    - name: Get the version
+      id: get_version
+      run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
     - name: Zip Release
       run: |
         printf "📦 Creating zip archive...\n"
-        zip -r SuperCooleSounds${{ github.ref }}.zip . -x *.md *.git* || { printf "\n⛔ Unable to create zip archive.\n"; exit 1;  }
+        zip -r SuperCooleSounds${{ steps.get_version.outputs.VERSION }}.zip . -x *.md *.git* || { printf "\n⛔ Unable to create zip archive.\n"; exit 1;  }
         printf "✔ Successfully created zip archive.\n"
     - name: Calculate checksum
       run: |
         printf "🧮 Calculating sha-1 hash...\n"
-        sha1sum SuperCooleSounds${{ github.ref }}.zip > SHA1SUMS || { printf "\n⛔ Unable to calculate sha-1 hash.\n"; exit 1;  }
+        sha1sum SuperCooleSounds${{ steps.get_version.outputs.VERSION }}.zip > SHA1SUMS || { printf "\n⛔ Unable to calculate sha-1 hash.\n"; exit 1;  }
         printf "✔ Successfully calculated sha-1 hash.\n"
     - name: Create Release
       id: create_release
@@ -49,8 +52,8 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
-        asset_path: ./SuperCooleSounds${{ github.ref }}.zip
-        asset_name: SuperCooleSounds${{ github.ref }}.zip
+        asset_path: ./SuperCooleSounds${{ steps.get_version.outputs.VERSION }}.zip
+        asset_name: SuperCooleSounds${{ steps.get_version.outputs.VERSION }}.zip
         asset_content_type: application/zip
     - name: Upload sha-1 hash
       id: upload-sha1-hash
