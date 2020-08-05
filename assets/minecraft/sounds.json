@@ -2,8 +2,7 @@
     "entity.sheep.ambient": {
         "replace": false,
         "sounds": [
-          "mob/sheep/say4",
-          "mob/sheep/say5"
+          "mob/sheep/say4"
         ],
         "subtitle": "subtitles.entity.sheep.ambient"
     },
