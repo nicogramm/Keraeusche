@@ -7,6 +7,36 @@
         ],
         "subtitle": "subtitles.entity.sheep.ambient"
     },
+    "entity.bee.loop": {
+        "sounds": [
+          {
+            "attenuation_distance": 6,
+            "name": "mob/bee/loop6",
+            "volume": 0.75
+          }
+        ],
+        "subtitle": "subtitles.entity.bee.loop"
+    },
+    "entity.bee.hurt": {
+      "sounds": [
+        {
+          "attenuation_distance": 16,
+          "name": "mob/bee/hurt4",
+          "volume": 1
+        }
+      ],
+      "subtitle": "subtitles.entity.bee.hurt"
+    },
+    "entity.bee.pollinate": {
+      "sounds": [
+        {
+          "attenuation_distance": 12,
+          "name": "mob/bee/pollinate5",
+          "volume": 0.8
+        }
+      ],
+      "subtitle": "subtitles.entity.bee.pollinate"
+    },
     "entity.villager.ambient": {
         "replace": true,
         "sounds": [
