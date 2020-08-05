@@ -2,46 +2,53 @@
     "entity.sheep.ambient": {
         "replace": false,
         "sounds": [
-          "mob/sheep/say4"
+            "mob/sheep/say4"
         ],
         "subtitle": "subtitles.entity.sheep.ambient"
     },
     "entity.cow.ambient": {
         "replace": false,
         "sounds": [
-          "mob/cow/say5"
+            "mob/cow/say5"
         ],
         "subtitle": "subtitles.entity.cow.ambient"
     },
     "entity.bee.loop": {
         "sounds": [
-          {
-            "attenuation_distance": 6,
-            "name": "mob/bee/loop6",
-            "volume": 0.75
-          }
+            {
+                "attenuation_distance": 6,
+                "name": "mob/bee/loop6",
+                "volume": 0.75
+            }
         ],
         "subtitle": "subtitles.entity.bee.loop"
     },
     "entity.bee.hurt": {
-      "sounds": [
-        {
-          "attenuation_distance": 16,
-          "name": "mob/bee/hurt4",
-          "volume": 1
-        }
-      ],
-      "subtitle": "subtitles.entity.bee.hurt"
+        "sounds": [
+            {
+                "attenuation_distance": 16,
+                "name": "mob/bee/hurt4",
+                "volume": 1
+            }
+        ],
+        "subtitle": "subtitles.entity.bee.hurt"
     },
     "entity.bee.pollinate": {
-      "sounds": [
-        {
-          "attenuation_distance": 12,
-          "name": "mob/bee/pollinate5",
-          "volume": 0.8
-        }
-      ],
-      "subtitle": "subtitles.entity.bee.pollinate"
+        "sounds": [
+            {
+                "attenuation_distance": 12,
+                "name": "mob/bee/pollinate5",
+                "volume": 0.8
+            }
+        ],
+        "subtitle": "subtitles.entity.bee.pollinate"
+    },
+    "entity.pig.ambient": {
+        "replace": false,
+        "sounds": [
+            "mob/pig/say4"
+        ],
+        "subtitle": "subtitles.entity.pig.ambient"
     },
     "entity.villager.ambient": {
         "replace": true,
@@ -50,50 +57,57 @@
             "mob/villager/idle2",
             "mob/villager/idle3",
             "mob/villager/idle4",
-            "mob/villager/idle5",
-            "mob/villager/idle6",
-            "mob/villager/idle7"
-        ]
+            "mob/villager/idle5"
+        ],
+        "subtitle": "subtitles.entity.villager.ambient"
     },
     "entity.villager.hurt": {
         "replace": true,
         "sounds": [
             "mob/villager/hit1",
             "mob/villager/hit2",
-            "mob/villager/hit3",
-            "mob/villager/hit4"
-        ]
+            "mob/villager/hit3"
+        ],
+        "subtitle": "subtitles.entity.villager.hurt"
     },
     "entity.witch.hurt": {
         "replace": true,
         "sounds": [
             "entity/witch/hurt1",
-            "entity/witch/hurt2",
-            "entity/witch/hurt3"
-        ]
+            "entity/witch/hurt2"
+        ],
+        "subtitle": "subtitles.entity.witch.hurt"
     },
     "entity.witch.throw": {
         "replace": true,
         "sounds": [
             "entity/witch/throw1",
-            "entity/witch/throw2",
-            "entity/witch/throw3"
-        ]
+            "entity/witch/throw2"
+        ],
+        "subtitle": "subtitles.entity.witch.throw"
+    },
+    "entity.witch.drink": {
+        "replace": false,
+        "sounds": [
+            "entity/witch/drink3"
+        ],
+        "subtitle": "subtitles.entity.witch.drink"
     },
     "entity.zombie.ambient": {
-        "replace": true,
+        "replace": false,
         "sounds": [
             "mob/zombie/say1",
-            "mob/zombie/say2",
-            "mob/zombie/say3"
-        ]
+            "mob/zombie/say2"
+        ],
+        "subtitle": "subtitles.entity.zombie.ambient"
     },
     "entity.zombie.hurt": {
         "replace": true,
         "sounds": [
             "mob/zombie/hurt1",
             "mob/zombie/hurt2",
-            "mob/zombie/hurt3"
+            "mob/zombie/hurt3",
+            "mob/zombie/hurt4"
         ]
     },
     "entity.zombie.attack_wooden_door": {
@@ -160,5 +174,11 @@
                 "stream": true
             }
         ]
+    },
+    "entity.ender_dragon.death": {
+        "sounds": [
+            "mob/enderdragon/end"
+        ],
+        "subtitle": "subtitles.entity.ender_dragon.death"
     }
 }
