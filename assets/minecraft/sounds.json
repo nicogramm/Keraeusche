@@ -7,6 +7,13 @@
         ],
         "subtitle": "subtitles.entity.sheep.ambient"
     },
+    "entity.cow.ambient": {
+        "replace": false,
+        "sounds": [
+          "mob/cow/say5"
+        ],
+        "subtitle": "subtitles.entity.cow.ambient"
+    },
     "entity.bee.loop": {
         "sounds": [
           {
