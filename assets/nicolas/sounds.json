@@ -3,7 +3,12 @@
         "sounds": [
             "nicolas:kohle/kohle1"
         ]
-    },
+	},
+	"pfiff": {
+		"sounds": [
+			"nicolas:pfiff/pfiff1"
+		]
+	},
 	"haha": {
 		"sounds": [
 			"nicolas:haha/haha1"

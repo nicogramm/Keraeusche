@@ -93,14 +93,6 @@
         ],
         "subtitle": "subtitles.entity.witch.drink"
     },
-    "entity.zombie.ambient": {
-        "replace": false,
-        "sounds": [
-            "mob/zombie/say1",
-            "mob/zombie/say2"
-        ],
-        "subtitle": "subtitles.entity.zombie.ambient"
-    },
     "entity.zombie.hurt": {
         "replace": true,
         "sounds": [
